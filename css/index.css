@@ -1,0 +1,169 @@
+/***** Menu styling *****/
+.hero {
+  background: linear-gradient(to top left, #fff9f0 0%, #000567 94%, #000567 100%);
+}
+
+.nav_section {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 8vh;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-weight: 700;
+}
+
+.log_in {
+  color: #1c23b2;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  border: 1px solid #f3dcde;
+  border-radius: 30px;
+  background-color: #f3dcde;
+}
+
+.log_in:hover {
+  color: #f3dcde;
+  background-color: #1c23b2;
+  border: 1px solid #1c23b2;
+  transition: color 0.4s;
+}
+
+.sign_up {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #f3dcde;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  border: 1px solid #1c23b2;
+  border-radius: 30px;
+  background-color: #1c23b2;
+}
+
+.sign_up:hover {
+  color: #1c23b2;
+  border: 1px solid #f3dcde;
+  background-color: #f3dcde;
+  transition: color 0.4s;
+}
+
+.burger {
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #f3dcde;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+
+  .log_in,
+  .sign_up {
+    text-align: center;
+  }
+}
+
+/***** Hero section styling *****/
+
+.hero {
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+/***** Info + CTA section styling *****/
+
+.info,
+.cta_section {
+  background-color: #fff9f0;
+}
