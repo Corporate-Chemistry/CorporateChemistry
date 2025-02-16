@@ -10,3 +10,35 @@ img {
   height: auto;
   display: block;
 }
+
+/* UNIVERS-FONT */
+@font-face {
+  font-family: "universregular";
+  src: url("../univers-font/universregular-webfont.woff2") format("woff2"), url("../univers-font/universregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "universbold";
+  src: url("../univers-font/universbold-webfont.woff2") format("woff2"), url("../univers-font/universbold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* MOBILE-FIRST */
+p,
+ul,
+li {
+  font-family: "universregular";
+  font-size: 16px;
+  /* color: var(--text-color); */
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
