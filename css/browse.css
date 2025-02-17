@@ -90,7 +90,8 @@ header {
 }
 
 .pref-container {
-  max-width: 800px;
+  /* max-width: 800px; */
+  max-width: 510px;
   margin: 40px auto;
   text-align: left;
 }
@@ -105,14 +106,35 @@ header {
   padding: 10px 20px;
   border-radius: 20px; /* Runde hjørner */
   font-size: 16px;
-  color: #2d1c85; /* Mørkeblå tekst */
+  font-weight: bold;
+  font-family: universregular; /* Universe font */
+  color: #1c23b2; /* Mørkeblå tekst */
   cursor: pointer;
-  border: 2px solid rgba(255, 220, 230, 0.6); /* Lyserød kant */
+  border: 2px solid #1c23b2; /* Blå kant */
   background: transparent;
+  /* Lun retninger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; /* Prevents text wrapping */
+  flex-grow: 1; /* Default growth */
+  min-width: 80px; /* Minimum size */
+}
+
+/* Lun retninger */
+/* Larger buttons */
+.university {
+  flex-grow: 2; /* Make this button larger */
+}
+
+.state,
+.city {
+  flex-grow: 1.5; /* Slightly larger than normal */
 }
 
 .pref.selected {
   background-color: rgba(255, 220, 230, 0.6);
+  border: 2px solid rgba(255, 220, 230, 0.6); /* pink kant når man har trykket */
 }
 
 .cards-container {
@@ -129,6 +151,7 @@ header {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
+  text-decoration: none;
 }
 
 .card:hover {
@@ -149,14 +172,16 @@ header {
 
 .card-name {
   font-size: 18px;
-  font-weight: bold;
-  color: #2d1c85;
+  font-weight: 300; /* Lun har rettet tykkelsen - Fra Bold(700) til 300 */
+  color: #1c23b2;
 }
 
 .card-job {
   font-size: 16px;
   color: gray;
   margin: 5px 0;
+  display: flex;
+  flex-direction: row;
 }
 
 /* Knapper */
@@ -183,7 +208,7 @@ header {
 }
 
 .like {
-  background: #2d1c85;
+  background: #1c23b2;
   color: white;
 }
 
@@ -192,8 +217,9 @@ header {
 }
 
 .mappe {
-  width: 15px;
+  width: 20px;
   height: auto;
+  margin-right: 2px;
 }
 
 main {
@@ -214,6 +240,7 @@ body {
   /* Justér main-indholdet til at fylde mere på små skærme */
   main {
     margin: 0 20px; /* Mindre margin på siderne */
+    padding-bottom: 100px;
   }
 
   /* Sørg for, at kortene fylder én række på små skærme */
