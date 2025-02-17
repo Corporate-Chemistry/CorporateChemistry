@@ -121,6 +121,10 @@ header {
   min-width: 80px; /* Minimum size */
 }
 
+.pref:hover {
+  transform: scale(1.08);
+}
+
 /* Lun retninger */
 /* Larger buttons */
 .university {
@@ -134,7 +138,7 @@ header {
 
 .pref.selected {
   background-color: rgba(255, 220, 230, 0.6);
-  border: 2px solid rgba(255, 220, 230, 0.6); /* pink kant når man har trykket */
+  border: 2px solid #1c23b2; /* pink kant når man har trykket */
 }
 
 .cards-container {
