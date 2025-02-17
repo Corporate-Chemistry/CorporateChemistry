@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  margin-bottom: 14vh;
+  margin-bottom: 8vh;
   z-index: 10;
 }
 
@@ -57,13 +57,15 @@ nav {
   border: 1px solid #f3dcde;
   border-radius: 30px;
   background-color: #f3dcde;
+  font-family: "Abril Fatface", serif;
 }
 
-.log_in:hover {
-  color: #f3dcde;
-  background-color: #1c23b2;
-  border: 1px solid #1c23b2;
-  transition: color 0.4s;
+.log_in:hover,
+.sign_up:hover,
+.cta_button:hover,
+.big_button:hover {
+  transition: 0.3s;
+  transform: scale(1.08);
 }
 
 .sign_up {
@@ -79,75 +81,7 @@ nav {
   border: 1px solid #1c23b2;
   border-radius: 30px;
   background-color: #1c23b2;
-}
-
-.sign_up:hover {
-  color: #1c23b2;
-  border: 1px solid #f3dcde;
-  background-color: #f3dcde;
-  transition: color 0.4s;
-}
-
-.burger {
-  width: 25px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.burger .line {
-  width: 100%;
-  height: 2px;
-  background-color: #fff9f0;
-  margin-bottom: 5px;
-  transition: 0.2s linear;
-}
-.burger {
-  display: none;
-}
-@media screen and (max-width: 800px) {
-  .menu {
-    display: none;
-  }
-  .burger {
-    display: block;
-  }
-  .burger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-    transition: 0.2s linear;
-  }
-
-  .burger.active .line:nth-child(2) {
-    opacity: 0;
-    transition: 0.15s linear;
-  }
-
-  .burger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-    transition: 0.2s linear;
-  }
-
-  nav.active .menu {
-    display: block;
-    position: absolute;
-    top: 94px;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
-
-  nav.active .menu li {
-    margin: 10px 20px;
-  }
-
-  nav.active .menu a {
-    font-size: 24px;
-  }
-
-  .log_in,
-  .sign_up {
-    text-align: center;
-  }
+  font-family: "Abril Fatface", serif;
 }
 
 /***** Hero section styling *****/
@@ -158,22 +92,10 @@ nav {
 }
 
 h1 {
-  font-size: clamp(5rem, 9vw, 9rem);
+  font-size: clamp(5rem, 8.5vw, 8.5rem);
   text-align: center;
   color: #3e4088;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.logo_hero {
-  position: relative;
-}
-
-.mini_logo {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 50px;
-  right: 15vw;
 }
 
 .text {
@@ -193,15 +115,16 @@ h1 {
   border: 1px solid #1c23b2;
   border-radius: 30px;
   background-color: #1c23b2;
-  margin-top: 2vh;
-  font-weight: 600;
+  margin-top: 1vh;
+  font-weight: 400;
+  font-family: "Abril Fatface", serif;
 }
 
 .hero_box {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-top: 12vh;
+  padding-top: 8vh;
   padding-right: 10vw;
 }
 
@@ -209,25 +132,41 @@ h1 {
   background: linear-gradient(90deg, #fff9f0 49%, #1c23b2 59%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: clamp(1.1rem, 2vw, 2.5rem);
+  font-size: clamp(1.3rem, 2vw, 2.5rem);
 }
 
 .arrow {
   height: 45px;
   width: 45px;
-  margin-top: 4vh;
+  margin-top: 2vh;
   margin-left: auto;
   margin-right: auto;
+  animation: arrow 1s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /***** CTA section styling *****/
 
 .info,
-.cta_section {
+#cta_section {
   background-color: #fff9f0;
 }
 
-.cta_section {
+#cta_section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 14vh;
@@ -238,12 +177,13 @@ h1 {
   color: #3c3937;
   font-size: clamp(2rem, 3vw, 3rem);
   margin-left: 4vw;
+  margin-right: 4vw;
 }
 
 .app_image {
   margin-right: 4vw;
-  height: 300px;
-  width: 240px;
+  height: 100%;
+  width: auto;
   place-self: center;
 }
 
@@ -272,11 +212,11 @@ h1 {
   border: 1px solid #1c23b2;
   border-radius: 40px;
   background-color: #1c23b2;
-  font-weight: 600;
   margin-left: 4vw;
   margin-right: 12vh;
   margin-bottom: 3vh;
   font-size: x-large;
+  font-family: "Abril Fatface", serif;
 }
 
 /***** Info section styling *****/
@@ -312,17 +252,83 @@ span {
   margin-left: 8vw;
   margin-right: 8vw;
   gap: 4vw;
-  padding-bottom: 20vh;
+  padding-bottom: 10vh;
 }
 
 .centered {
   color: #1c23b2;
   text-align: center;
-  margin-bottom: 2.5vh;
+  margin-bottom: 1.5vh;
 }
 
 .centered_text {
-  text-align: center;
+  /* text-align: center; */
   font-size: clamp(1rem, 1.2vw, 1.2rem);
   line-height: 140%;
+}
+
+.icons {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 3vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/***** Responsivitet *****/
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+
+  .cta_button,
+  .app_image {
+    display: none;
+  }
+
+  .nav_section {
+    padding-bottom: 8vh;
+  }
+  .hero_box {
+    align-items: center;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    padding-right: 0;
+  }
+
+  .arrow {
+    margin-bottom: 8vh;
+  }
+
+  #cta_section {
+    display: block;
+  }
+
+  .button_flex {
+    margin-left: 4vh;
+    margin-right: 4vh;
+  }
+  .big_button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .h2_2,
+  .dark_text,
+  .centered_text {
+    text-align: left;
+  }
+  .dark_text {
+    word-break: keep-all;
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+
+  .centered_text {
+    margin-bottom: 8vh;
+  }
+  .grid1-3 {
+    display: block;
+  }
 }
