@@ -214,6 +214,7 @@ body {
   /* Justér main-indholdet til at fylde mere på små skærme */
   main {
     margin: 0 20px; /* Mindre margin på siderne */
+    padding: 100px;
   }
 
   /* Sørg for, at kortene fylder én række på små skærme */
