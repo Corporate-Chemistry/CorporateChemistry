@@ -78,3 +78,128 @@ header {
     max-width: 100vw;
   }
 }
+
+.browseh1 {
+  font-size: 5rem;
+  text-align: center;
+  color: #31302f;
+}
+
+.tuyp {
+  color: #878685;
+}
+
+.pref-container {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.prefs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pref {
+  padding: 10px 20px;
+  border-radius: 20px; /* Runde hjørner */
+  font-size: 16px;
+  color: #2d1c85; /* Mørkeblå tekst */
+  cursor: pointer;
+  border: 2px solid rgba(255, 220, 230, 0.6); /* Lyserød kant */
+  background: transparent;
+}
+
+.pref.selected {
+  background-color: rgba(255, 220, 230, 0.6);
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d1c85;
+}
+
+.card-job {
+  font-size: 16px;
+  color: gray;
+  margin: 5px 0;
+}
+
+/* Knapper */
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 18px;
+  border: none;
+  margin: 0 20px 0 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dislike {
+  background: #444;
+  color: white;
+}
+
+.like {
+  background: #2d1c85;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.mappe {
+  width: 15px;
+  height: auto;
+}
+
+main {
+  margin: 0 300px 300px 300px;
+}
+
+body {
+  background-color: #f2eee9;
+}
