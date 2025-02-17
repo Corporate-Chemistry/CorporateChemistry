@@ -1,0 +1,80 @@
+/* MENU */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+  align-items: center; /* vertikal centrering */
+  font-size: 16px;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* drop shadow */
+}
+.logo img {
+  width: 90px; /* Fast bredde vigtigt*/
+  height: auto;
+  margin: 5px;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 60px; /* mellem menupunkterne */
+}
+.menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 5px; /* mellem tekst og ikon */
+}
+.menu a:hover p {
+  color: var(--primary-color);
+}
+.menu img {
+  width: auto;
+  height: 40px;
+}
+.menu .blue {
+  display: none;
+}
+.menu a:hover .blue {
+  display: block;
+}
+.menu a:hover .rosa {
+  display: none;
+}
+
+/* "APP"-MENU */
+@media screen and (max-width: 850px) {
+  header {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    top: auto; /* Sørger for at den ikke bliver i toppen */
+    width: 100%;
+    background-color: var(--background-color);
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* drop-shadow */
+    padding: 10px 0;
+    z-index: 200;
+    overflow: hidden;
+  }
+  .logo {
+    display: none;
+  }
+  .menu a p {
+    display: none;
+  }
+  .menu img {
+    height: 55px;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0 30px;
+    width: 100%;
+    max-width: 100vw;
+  }
+}
