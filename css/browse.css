@@ -203,3 +203,49 @@ main {
 body {
   background-color: #f2eee9;
 }
+
+/* mobil */
+@media screen and (max-width: 850px) {
+  /* Justér body for at fjerne store margins på mobil */
+  body {
+    margin: 0;
+  }
+
+  /* Justér main-indholdet til at fylde mere på små skærme */
+  main {
+    margin: 0 20px; /* Mindre margin på siderne */
+  }
+
+  /* Sørg for, at kortene fylder én række på små skærme */
+  .cards-container {
+    display: flex;
+    flex-direction: column; /* Stable kortene vertikalt */
+    align-items: center; /* Centrer kortene */
+  }
+
+  .card {
+    width: 90%; /* Kortene fylder næsten hele bredden */
+    max-width: 350px; /* Bevarer en god størrelse */
+  }
+
+  /* Reducér font-størrelsen på overskrifter */
+  .browseh1 {
+    font-size: 3rem;
+  }
+
+  /* Lav knapperne mindre */
+  .btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .pref-container {
+    max-width: 100%; /* Sørger for at det fylder hele bredden */
+    text-align: center; /* Centrerer teksten */
+    padding: 0 20px; /* Tilføjer lidt luft fra kanten */
+  }
+
+  .prefs {
+    justify-content: center; /* Centrerer knapperne */
+  }
+}
