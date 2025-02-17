@@ -82,6 +82,7 @@ header {
 /* MOBILE FIRST */
 .grid_1-1 img {
   height: 500px;
+  object-fit: cover;
 }
 
 main {
@@ -152,4 +153,26 @@ h2 {
 
 .col li {
   margin-bottom: 4px;
+}
+
+/* DESKTOP */
+@media (min-width: 850px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    padding-top: 80px;
+  }
+  .seecond-grid {
+    padding-top: 0px;
+  }
+  .seecond-grid h2 {
+    margin-top: 0;
+  }
+  .more-info {
+    max-width: 1000px;
+    margin: 40px auto 0;
+  }
 }
