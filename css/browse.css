@@ -151,6 +151,7 @@ header {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
+  text-decoration: none;
 }
 
 .card:hover {
@@ -239,7 +240,7 @@ body {
   /* Justér main-indholdet til at fylde mere på små skærme */
   main {
     margin: 0 20px; /* Mindre margin på siderne */
-    padding: 100px;
+    padding-bottom: 100px;
   }
 
   /* Sørg for, at kortene fylder én række på små skærme */
