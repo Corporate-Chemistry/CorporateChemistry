@@ -23,8 +23,8 @@
           </div>
           <nav>
             <ul class="menu">
-              <li><a href="index.html" class="log_in">Log-In</a></li>
-              <li><a href="index.html" class="sign_up">Sign Up</a></li>
+              <li><a href="/html/login.html" class="log_in">Log-In</a></li>
+              <li><a href="/html/signup.html" class="sign_up">Sign Up</a></li>
             </ul>
           </nav>
         </div>
@@ -37,7 +37,7 @@
           </div>
           <div class="hero_box">
             <h2 class="text_gradient">If Commitment Turns You On,</h2>
-            <p class="cta_button"><a href="#cta_section"></a>Sign Up</p>
+            <a href="/html/signup.html" class="cta_button">Sign Up</a>
           </div>
           <a href="#cta_section">
             <img src="imgs/arrow.svg" alt="a fading arrow" class="arrow" />
@@ -50,9 +50,9 @@
           <p class="preferences">Tell Us Your Preferences</p>
           <h3 class="date">I want to date...</h3>
           <div class="button_flex">
-            <p class="big_button">Men</p>
-            <p class="big_button">Women</p>
-            <p class="big_button">Both</p>
+            <a data-gender="All" href="/html/browse.html?gender=male" class="big_button">Men</a>
+            <a data-gender="All" href="/html/browse.html?gender=female" class="big_button">Women</a>
+            <a data-gender="All" href="/html/browse.html" class="big_button">Both</a>
           </div>
         </div>
         <img src="svg/mockup.svg" alt="a mockup of the websites profile view in an iphone frame" class="app_image" />
@@ -82,6 +82,6 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <script src="/js/index.js"></script>
   </body>
 </html>
