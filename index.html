@@ -6,14 +6,20 @@
     <!-- ABRIL FATFACE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Chonburi&family=Hind+Madurai:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Chonburi&family=Hind+Madurai:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/svg" href="../svg/logo.svg" />
+    <script src="/js/index.js"></script>
     <title>Corporate Chemistry</title>
   </head>
   <body>
     <main>
+      <article class="index_container"></article>
+
       <section class="hero">
         <div class="nav_section">
           <div class="logo">
@@ -50,34 +56,73 @@
           <p class="preferences">Tell Us Your Preferences</p>
           <h3 class="date">I want to date...</h3>
           <div class="button_flex">
-            <p class="big_button">Men</p>
-            <p class="big_button">Women</p>
-            <p class="big_button">Both</p>
+            <p class="big_button" data-gender="Men" onclick="setGender('Men')">
+              Men
+            </p>
+            <p
+              class="big_button"
+              data-gender="Women"
+              onclick="setGender('Women')"
+            >
+              Women
+            </p>
+            <p
+              class="big_button"
+              data-gender="Both"
+              onclick="setGender('Both')"
+            >
+              Both
+            </p>
           </div>
         </div>
-        <img src="svg/mockup.svg" alt="a mockup of the websites profile view in an iphone frame" class="app_image" />
+        <img
+          src="svg/mockup.svg"
+          alt="a mockup of the websites profile view in an iphone frame"
+          class="app_image"
+        />
       </section>
       <section class="info">
         <h2 class="h2_2">
           Why chose corporate chemistry? <br />
           Well, <span>Commitment is the new sexy.</span>
         </h2>
-        <p class="dark_text">In a fast-paced world, juggling a demanding career and personal life leaves little room for endless swiping and disappointing dates. If you’re serious about finding a meaningful connection and can’t help but glance at job titles first, Corporate Dating is for you. Meet like-minded professionals who value ambition, and real connections — because your time is too valuable to waste.</p>
+        <p class="dark_text">
+          In a fast-paced world, juggling a demanding career and personal life
+          leaves little room for endless swiping and disappointing dates. If
+          you’re serious about finding a meaningful connection and can’t help
+          but glance at job titles first, Corporate Dating is for you. Meet
+          like-minded professionals who value ambition, and real connections —
+          because your time is too valuable to waste.
+        </p>
         <div class="grid1-3">
           <div>
             <img src="svg/efficient-blue.svg" alt="a blue icon" class="icons" />
             <h3 class="centered">Efficient Matching</h3>
-            <p class="centered_text">You'll receive a curated batch of profiles that align with your preferences — and where you align with theirs — prioritizing the best potential matches for you.</p>
+            <p class="centered_text">
+              You'll receive a curated batch of profiles that align with your
+              preferences — and where you align with theirs — prioritizing the
+              best potential matches for you.
+            </p>
           </div>
           <div>
             <img src="svg/games-blue.svg" alt="a blue icon" class="icons" />
             <h3 class="centered">No Games</h3>
-            <p class="centered_text">If you heart everyone but never message, you’re only hurting your chances — and you get deprioritized in matching. Matched with a flake? No worries—we’ll handle it by expiring matches after 14 days.</p>
+            <p class="centered_text">
+              If you heart everyone but never message, you’re only hurting your
+              chances — and you get deprioritized in matching. Matched with a
+              flake? No worries—we’ll handle it by expiring matches after 14
+              days.
+            </p>
           </div>
           <div>
             <img src="svg/safety-blue.svg" alt="a blue icon" class="icons" />
             <h3 class="centered">Safety First</h3>
-            <p class="centered_text">Let us do the stalking! We are committed to authenticity and weeding out bad actors. We use LinkedIn to verify accounts and screen out fakes in our effort to build a community of real prospects.</p>
+            <p class="centered_text">
+              Let us do the stalking! We are committed to authenticity and
+              weeding out bad actors. We use LinkedIn to verify accounts and
+              screen out fakes in our effort to build a community of real
+              prospects.
+            </p>
           </div>
         </div>
       </section>

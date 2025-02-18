@@ -87,6 +87,7 @@ header {
 
 .tuyp {
   color: #878685;
+  padding-bottom: 20px;
 }
 
 .pref-container {
@@ -99,7 +100,7 @@ header {
 .prefs {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px; /* Skiftet gap fra 10 til 20*/
 }
 
 .pref {
@@ -122,10 +123,20 @@ header {
 }
 
 .pref:hover {
-  transform: scale(1.08);
+  /* transform: scale(1.08); */
+  background-color: rgba(255, 220, 230, 0.6);
 }
 
 /* Lun retninger */
+
+select {
+  direction: ltr; /* Ensures left-to-right layout */
+}
+
+select:focus {
+  transform: translateY(0); /* Prevents any upward shifting */
+}
+
 /* Larger buttons */
 .university {
   flex-grow: 2; /* Make this button larger */
@@ -273,7 +284,6 @@ body {
   .pref-container {
     max-width: 100%; /* Sørger for at det fylder hele bredden */
     text-align: center; /* Centrerer teksten */
-    padding: 0 20px; /* Tilføjer lidt luft fra kanten */
   }
 
   .prefs {
