@@ -82,11 +82,11 @@ header {
 .browseh1 {
   font-size: 5rem;
   text-align: center;
-  color: #31302f;
+  color: var(--text-color);
 }
 
 .tuyp {
-  color: #878685;
+  color: var(--grey-color);
 }
 
 .pref-container {
@@ -108,9 +108,9 @@ header {
   font-size: 16px;
   font-weight: bold;
   font-family: universregular; /* Universe font */
-  color: #1c23b2; /* Mørkeblå tekst */
+  color: var(--primary-color); /* Mørkeblå tekst */
   cursor: pointer;
-  border: 2px solid #1c23b2; /* Blå kant */
+  border: 2px solid var(--primary-color); /* Blå kant */
   background: transparent;
   /* Lun retninger */
   display: flex;
@@ -138,7 +138,7 @@ header {
 
 .pref.selected {
   background-color: rgba(255, 220, 230, 0.6);
-  border: 2px solid #1c23b2; /* pink kant når man har trykket */
+  border: 2px solid var(--primary-color); /* pink kant når man har trykket */
 }
 
 .cards-container {
@@ -177,7 +177,7 @@ header {
 .card-name {
   font-size: 18px;
   font-weight: 300; /* Lun har rettet tykkelsen - Fra Bold(700) til 300 */
-  color: #1c23b2;
+  color: var(--primary-color);
 }
 
 .card-job {
@@ -207,13 +207,13 @@ header {
 }
 
 .dislike {
-  background: #444;
-  color: white;
+  background: var(--text-color);
+  color: var(--white-color);
 }
 
 .like {
-  background: #1c23b2;
-  color: white;
+  background: var(--primary-color);
+  color: var(--white-color);
 }
 
 .btn:hover {
@@ -231,7 +231,7 @@ main {
 }
 
 body {
-  background-color: #f2eee9;
+  background-color: var(--background-color);
 }
 
 /* mobil */
