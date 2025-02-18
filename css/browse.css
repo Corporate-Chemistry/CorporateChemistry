@@ -87,6 +87,7 @@ header {
 
 .tuyp {
   color: var(--grey-color);
+  margin-bottom: 15px;
 }
 
 .pref-container {
@@ -272,7 +273,6 @@ body {
 
   .pref-container {
     max-width: 100%; /* Sørger for at det fylder hele bredden */
-    text-align: center; /* Centrerer teksten */
     padding: 0 20px; /* Tilføjer lidt luft fra kanten */
   }
 
