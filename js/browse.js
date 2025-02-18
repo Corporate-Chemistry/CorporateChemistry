@@ -4,12 +4,23 @@ document.querySelectorAll(".pref").forEach((button) => {
   });
 });
 
-const preferencer = new URLSearchParams(window.location.search).get("category");
-console.log("productliste loader...", preferencer);
+/*get gender*/
+const pickedGender = new URLSearchParams(window.location.search).get("gender");
+console.log("browse loader...", pickedGender);
 
-let Produktliste = document.querySelector(".cards-container");
+/*info på browse*/
+let browse = document.querySelector(".cards-container");
+let fetchUrl;
 
-fetch(`https://dummyjson.com/users?limit=30`)
+if (pickedGender === null) {
+  fetchUrl = `https://dummyjson.com/users`;
+  console.log("fetchurl er ", fetchUrl);
+} else {
+  fetchUrl = `https://dummyjson.com/users/filter?key=gender&value=${pickedGender}`;
+  console.log("fetchurl er ", fetchUrl);
+}
+
+fetch(fetchUrl)
   .then((response) => response.json())
   .then((data) => showList(data));
 
@@ -37,5 +48,5 @@ function showList(users) {
     )
     .join("");
   console.log(markup);
-  Produktliste.innerHTML = markup;
+  browse.innerHTML = markup;
 }
