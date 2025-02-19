@@ -9,7 +9,7 @@ fetch(`https://dummyjson.com/users/${profileId}`)
   .then((data) => {
     profileCard.innerHTML = `
       <div class="grid_1-1">
-        <img src="../imgs/placeholder-portrait.png" alt="Portrait" class="no-padding" />
+        <img src="../imgs/profile${profileId}.webp" alt="Portrait" class="no-padding" />
         <div class="col">
           <h1>${data.firstName} - ${data.age}</h1>
           <div class="intro">
