@@ -1,6 +1,11 @@
 /***** Menu styling *****/
 .hero {
-  background: linear-gradient(to top left, #fff9f0 0%, #000567 94%, #000567 100%);
+  background: linear-gradient(
+    to top left,
+    #fff9f0 0%,
+    #000567 94%,
+    #000567 100%
+  );
 }
 
 .nav_section {

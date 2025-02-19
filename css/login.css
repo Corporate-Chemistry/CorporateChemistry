@@ -39,7 +39,6 @@ button {
 input {
   font-family: "universregular", sans-serif;
   border-color: black;
-  border: ;
 }
 
 form {
@@ -53,6 +52,7 @@ form input:focus {
 .name,
 .email {
   padding: 7px;
+  margin-bottom: 10px;
 }
 
 .message {
@@ -74,13 +74,13 @@ input {
 
 .html_form {
   /* display: flex;
-        justify-content: center; */
+          justify-content: center; */
   border-radius: 25px;
   background: #f7f1ea;
   /* box-shadow: -28px -28px 100px -6px #f7f1ea,
-    20px 20px 50px 0px rgba(13, 39, 80, 0.25); */
+      20px 20px 50px 0px rgba(13, 39, 80, 0.25); */
   width: 50%;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   margin: auto;
 
   button {
@@ -105,51 +105,4 @@ input {
 
 #submit {
   margin: auto;
-}
-
-/* Filter */
-.prefs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.pref {
-  padding: 10px 20px;
-  margin: 10px 10px 20px 10px;
-  border-radius: 20px; /* Runde hjørner */
-  font-size: 16px;
-  font-weight: bold;
-  font-family: universregular; /* Universe font */
-  color: var(--primary-color); /* Mørkeblå tekst */
-  cursor: pointer;
-  border: 2px solid var(--primary-color); /* Blå kant */
-  background: transparent;
-  /* Lun retninger */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap; /* Prevents text wrapping */
-  flex-grow: 1; /* Default growth */
-  min-width: 80px; /* Minimum size */
-}
-
-.pref:hover {
-  transform: scale(1.08);
-}
-
-/* Lun retninger */
-/* Larger buttons */
-.university {
-  flex-grow: 2; /* Make this button larger */
-}
-
-.state,
-.city {
-  flex-grow: 1.5; /* Slightly larger than normal */
-}
-
-.pref.selected {
-  background-color: rgba(255, 220, 230, 0.6);
-  border: 2px solid var(--primary-color); /* pink kant når man har trykket */
 }
