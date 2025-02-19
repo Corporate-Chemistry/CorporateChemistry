@@ -1,0 +1,152 @@
+body {
+  margin: 0px;
+}
+
+.form_container {
+  background: linear-gradient(
+    to top left,
+    #fff9f0 0%,
+    #000567 94%,
+    #000567 100%
+  );
+  padding-bottom: 24.5%;
+}
+
+.form_text {
+  text-align: center;
+  h1 {
+    padding-top: 20px;
+    font-family: "Abril Fatface", serif;
+    font-size: 50px;
+    color: white;
+  }
+  p {
+    font-family: "universregular", sans-serif;
+    font-size: 25px;
+    color: white;
+  }
+}
+
+label,
+input,
+button {
+  display: block;
+  margin-top: 25px;
+  border-radius: 10px;
+  border: 0;
+}
+
+input {
+  font-family: "universregular", sans-serif;
+}
+
+form {
+  display: grid;
+}
+
+form input:focus {
+  outline: none;
+}
+
+.name,
+.email {
+  padding: 7px;
+}
+
+.message {
+  height: 111px;
+  margin-bottom: 20px;
+}
+
+.name,
+.email,
+.message {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+input {
+  border-color: black;
+}
+
+.html_form {
+  /* display: flex;
+        justify-content: center; */
+  border-radius: 25px;
+  background: #f7f1ea;
+  /* box-shadow: -28px -28px 100px -6px #f7f1ea,
+    20px 20px 50px 0px rgba(13, 39, 80, 0.25); */
+  width: 50%;
+  padding-bottom: 20px;
+  margin: auto;
+
+  button {
+    width: 200px;
+    height: 30px;
+    border: 2px solid #1c23b2;
+    border-radius: 50px;
+    background: #1c23b2;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      10px 10px 65px rgba(255, 255, 255, 0.25);
+    font-family: "Abril Fatface", serif;
+    padding-bottom: 30px;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.63px;
+  }
+}
+
+#submit {
+  margin: auto;
+}
+
+/* Filter */
+.prefs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pref {
+  padding: 10px 20px;
+  margin: 10px 10px 20px 10px;
+  border-radius: 20px; /* Runde hjørner */
+  font-size: 16px;
+  font-weight: bold;
+  font-family: universregular; /* Universe font */
+  color: var(--primary-color); /* Mørkeblå tekst */
+  cursor: pointer;
+  border: 2px solid var(--primary-color); /* Blå kant */
+  background: transparent;
+  /* Lun retninger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; /* Prevents text wrapping */
+  flex-grow: 1; /* Default growth */
+  min-width: 80px; /* Minimum size */
+}
+
+.pref:hover {
+  transform: scale(1.08);
+}
+
+/* Lun retninger */
+/* Larger buttons */
+.university {
+  flex-grow: 2; /* Make this button larger */
+}
+
+.state,
+.city {
+  flex-grow: 1.5; /* Slightly larger than normal */
+}
+
+.pref.selected {
+  background-color: rgba(255, 220, 230, 0.6);
+  border: 2px solid var(--primary-color); /* pink kant når man har trykket */
+}
