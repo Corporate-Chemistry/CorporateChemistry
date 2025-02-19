@@ -1,6 +1,6 @@
 /***** Menu styling *****/
 .hero {
-  background: linear-gradient(to top left, #fff9f0 0%, #000567 94%, #000567 100%);
+  background: linear-gradient(to top left, var(--background-color) 0%, #000567 94%, #000567 100%);
 }
 
 .nav_section {
@@ -49,13 +49,13 @@ nav {
 }
 
 .log_in {
-  color: #1c23b2;
+  color: var(--primary-color);
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
-  border: 1px solid #f3dcde;
+  border: 1px solid var(--rosa-color);
   border-radius: 30px;
-  background-color: #f3dcde;
+  background-color: var(--rosa-color);
   font-family: "Abril Fatface", serif;
 }
 
@@ -73,13 +73,13 @@ nav {
   padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
-  color: #f3dcde;
+  color: var(--rosa-color);
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
-  border: 1px solid #1c23b2;
+  border: 1px solid var(--primary-color);
   border-radius: 30px;
-  background-color: #1c23b2;
+  background-color: var(--primary-color);
   font-family: "Abril Fatface", serif;
 }
 
@@ -88,7 +88,7 @@ nav {
 h1 {
   font-size: clamp(5rem, 8.5vw, 8.5rem);
   text-align: center;
-  color: #3e4088;
+  color: var(--hero-color);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -102,13 +102,13 @@ h1 {
   padding-bottom: 7px;
   padding-left: 35px;
   padding-right: 35px;
-  color: #fff9f0;
+  color: var(--background-color);
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
-  border: 1px solid #1c23b2;
+  border: 1px solid var(--primary-color);
   border-radius: 30px;
-  background-color: #1c23b2;
+  background-color: var(--primary-color);
   margin-top: 1vh;
   font-weight: 400;
   font-family: "Abril Fatface", serif;
@@ -123,7 +123,7 @@ h1 {
 }
 
 .text_gradient {
-  background: linear-gradient(90deg, #fff9f0 49%, #1c23b2 59%);
+  background: linear-gradient(90deg, var(--background-color) 49%, var(--primary-color) 59%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: clamp(1.3rem, 2vw, 2.5rem);
@@ -157,7 +157,7 @@ h1 {
 
 .info,
 #cta_section {
-  background-color: #fff9f0;
+  background-color: var(--background-color);
 }
 
 #cta_section {
@@ -168,7 +168,7 @@ h1 {
 }
 
 .h2 {
-  color: #3c3937;
+  color: var(--text-color);
   font-size: clamp(2rem, 3vw, 3rem);
   margin-left: 4vw;
   margin-right: 4vw;
@@ -185,14 +185,14 @@ h1 {
   margin-left: 4vw;
   margin-top: 1.2vh;
   font-size: 1.1rem;
-  color: #6e6e6e;
+  color: var(--grey-color);
 }
 
 .date {
   margin-left: 4vw;
   font-size: clamp(1.2rem, 2vw, 1.5rem);
   margin-top: 6vh;
-  color: #6e6e6e;
+  color: var(--grey-color);
   margin-bottom: 3vh;
 }
 
@@ -200,12 +200,12 @@ h1 {
   display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
-  color: #f3dcde;
+  color: var(--rosa-color);
   transition: color 0.3s;
   justify-content: center;
-  border: 1px solid #1c23b2;
+  border: 1px solid var(--primary-color);
   border-radius: 40px;
-  background-color: #1c23b2;
+  background-color: var(--primary-color);
   margin-left: 4vw;
   margin-right: 12vh;
   margin-bottom: 3vh;
@@ -217,7 +217,7 @@ h1 {
 /***** Info section styling *****/
 
 .h2_2 {
-  color: #3c3937;
+  color: var(--text-color);
   font-size: clamp(1.8rem, 3vw, 3rem);
   margin-left: 4vw;
   word-break: normal;
@@ -229,7 +229,7 @@ h1 {
 }
 
 span {
-  color: #1c23b2;
+  color: var(--primary-color);
 }
 
 .dark_text {
@@ -251,7 +251,7 @@ span {
 }
 
 .centered {
-  color: #6e6e6e;
+  color: var(--grey-color);
   text-align: center;
   margin-bottom: 1.5vh;
 }
