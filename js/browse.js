@@ -30,7 +30,7 @@ function showList(users) {
     .map(
       (user) =>
         `<a href="profile.html?id=${user.id}" class="card">
-        <img src="../imgs/emily.jpg" alt="emily" class="card-img" />
+        <img src="../imgs/profile${user.id}.webp" alt="Portræt" class="card-img" />
         <div class="card-info">
           <h3 class="card-name">
             ${user.firstName} <span class="age"> - ${user.age}</span>
