@@ -29,8 +29,8 @@ fetch(`https://dummyjson.com/users/${profileId}`)
           <h2>About</h2>
           <p>Adventurous, curious, and always up for a good conversation! Hello, I'm ${data.firstName} - a ${data.age}-years old ${data.gender}. I work as a ${data.company.title} at ${data.company.name} in the department of ${data.company.department}. I have a passion for discovering new places and learning something new every day. I studied at ${data.university}, where I had 4 great years. You'll often find me with a good cup of coffee in my hand working. If i sound like a match for you, please send me a message or match with me!</p>
           <div class="flex-container2">
-            <a href="" class="cta">Match</a>
-            <a href="" class="cta">Message</a>
+            <a href="construction.html" class="cta">Match</a>
+            <a href="construction.html" class="cta">Message</a>
           </div>
         </div>
       </div>
