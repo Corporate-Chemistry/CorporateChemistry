@@ -16,7 +16,7 @@ if (pickedGender === null) {
   fetchUrl = `https://dummyjson.com/users`;
   console.log("fetchurl er ", fetchUrl);
 } else {
-  fetchUrl = `https://dummyjson.com/users/filter?key=gender&value=${pickedGender}`;
+  fetchUrl = `https://dummyjson.com/users/filter?key=gender&value=${pickedGender}&limit=22`;
   console.log("fetchurl er ", fetchUrl);
 }
 
