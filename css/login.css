@@ -14,13 +14,13 @@ body {
     padding-top: 20px;
     font-family: "Abril Fatface", serif;
     font-size: 50px;
-    color: white;
+    color: var(--white-color);
     padding-bottom: 8vh;
   }
   p {
     font-family: "universregular", sans-serif;
     font-size: 25px;
-    color: white;
+    color: var(--white-color);
     font-style: italic;
   }
 }
@@ -67,7 +67,7 @@ form input:focus {
 }
 
 input {
-  border: 2px solid #1c23b2;
+  border: 2px solid var(--primary-color);
   border-radius: 50px;
 }
 
@@ -85,11 +85,11 @@ input {
 }
 
 button {
-  border: 2px solid #1c23b2;
+  border: 2px solid var(--primary-color);
   border-radius: 30px;
-  background: #1c23b2;
+  background: var(--primary-color);
   text-align: center;
-  color: white;
+  color: var(--white-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 10px 10px 65px rgba(255, 255, 255, 0.25);
   font-family: "Abril Fatface", serif;
   padding-top: 1px;
