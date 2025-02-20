@@ -260,6 +260,13 @@ body {
     max-width: 350px; /* Bevarer en god størrelse */
   }
 
+  .card-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+  }
+
   /* Reducér font-størrelsen på overskrifter */
   .browseh1 {
     font-size: 3rem;
