@@ -3,13 +3,9 @@ body {
 }
 
 .form_container {
-  background: linear-gradient(
-    to top left,
-    #fff9f0 0%,
-    #000567 94%,
-    #000567 100%
-  );
-  padding-bottom: 24.5%;
+  background: linear-gradient(to top left, #fff9f0 0%, #000567 94%, #000567 100%);
+  padding-bottom: 45vh;
+  padding-top: 6vh;
 }
 
 .form_text {
@@ -19,11 +15,13 @@ body {
     font-family: "Abril Fatface", serif;
     font-size: 50px;
     color: white;
+    padding-bottom: 8vh;
   }
   p {
     font-family: "universregular", sans-serif;
     font-size: 25px;
     color: white;
+    font-style: italic;
   }
 }
 
@@ -63,8 +61,9 @@ form input:focus {
 .name,
 .email,
 .message {
-  margin-left: 50px;
-  margin-right: 50px;
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input {
@@ -73,36 +72,42 @@ input {
 }
 
 .html_form {
-  /* display: flex;
-          justify-content: center; */
-  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
   background: #f7f1ea;
   /* box-shadow: -28px -28px 100px -6px #f7f1ea,
       20px 20px 50px 0px rgba(13, 39, 80, 0.25); */
-  width: 50%;
+  width: 40%;
   padding-bottom: 50px;
   margin: auto;
+  margin-top: 3vh;
+}
 
-  button {
-    width: 200px;
-    height: 30px;
-    border: 2px solid #1c23b2;
-    border-radius: 50px;
-    background: #1c23b2;
-    text-align: center;
-    color: white;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
-      10px 10px 65px rgba(255, 255, 255, 0.25);
-    font-family: "Abril Fatface", serif;
-    padding-bottom: 30px;
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.63px;
-  }
+button {
+  border: 2px solid #1c23b2;
+  border-radius: 30px;
+  background: #1c23b2;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 10px 10px 65px rgba(255, 255, 255, 0.25);
+  font-family: "Abril Fatface", serif;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.63px;
+  margin-top: 2vh;
 }
 
 #submit {
   margin: auto;
+}
+
+button:hover {
+  transform: scale(1.08);
 }
