@@ -82,12 +82,12 @@ header {
 .browseh1 {
   font-size: 5rem;
   text-align: center;
-  color: var(--text-color);
+  color: #31302f;
 }
 
 .tuyp {
-  color: var(--grey-color);
-  margin-bottom: 15px;
+  color: #878685;
+  padding-bottom: 20px;
 }
 
 .pref-container {
@@ -100,7 +100,7 @@ header {
 .prefs {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px; /* Skiftet gap fra 10 til 20*/
 }
 
 .pref {
@@ -109,9 +109,9 @@ header {
   font-size: 16px;
   font-weight: bold;
   font-family: universregular; /* Universe font */
-  color: var(--primary-color); /* Mørkeblå tekst */
+  color: #1c23b2; /* Mørkeblå tekst */
   cursor: pointer;
-  border: 2px solid var(--primary-color); /* Blå kant */
+  border: 2px solid #1c23b2; /* Blå kant */
   background: transparent;
   /* Lun retninger */
   display: flex;
@@ -123,10 +123,20 @@ header {
 }
 
 .pref:hover {
-  transform: scale(1.08);
+  /* transform: scale(1.08); */
+  background-color: rgba(255, 220, 230, 0.6);
 }
 
 /* Lun retninger */
+
+select {
+  direction: ltr; /* Ensures left-to-right layout */
+}
+
+select:focus {
+  transform: translateY(0); /* Prevents any upward shifting */
+}
+
 /* Larger buttons */
 .university {
   flex-grow: 2; /* Make this button larger */
@@ -139,7 +149,7 @@ header {
 
 .pref.selected {
   background-color: rgba(255, 220, 230, 0.6);
-  border: 2px solid var(--primary-color); /* pink kant når man har trykket */
+  border: 2px solid #1c23b2; /* pink kant når man har trykket */
 }
 
 .cards-container {
@@ -178,7 +188,7 @@ header {
 .card-name {
   font-size: 18px;
   font-weight: 300; /* Lun har rettet tykkelsen - Fra Bold(700) til 300 */
-  color: var(--primary-color);
+  color: #1c23b2;
 }
 
 .card-job {
@@ -208,13 +218,13 @@ header {
 }
 
 .dislike {
-  background: var(--text-color);
-  color: var(--white-color);
+  background: #444;
+  color: white;
 }
 
 .like {
-  background: var(--primary-color);
-  color: var(--white-color);
+  background: #1c23b2;
+  color: white;
 }
 
 .btn:hover {
@@ -232,7 +242,7 @@ main {
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: #f2eee9;
 }
 
 /* mobil */
@@ -280,7 +290,8 @@ body {
 
   .pref-container {
     max-width: 100%; /* Sørger for at det fylder hele bredden */
-    padding: 0 20px; /* Tilføjer lidt luft fra kanten */
+    text-align: center; /* Centrerer teksten */
+    margin-bottom: 20px;
   }
 
   .prefs {
