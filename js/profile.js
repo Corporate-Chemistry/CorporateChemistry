@@ -43,7 +43,7 @@ fetch(`https://dummyjson.com/users/${profileId}`)
               <li><span class="bold">Height:</span> ${data.height}</li>
               <li><span class="bold">Eye color:</span> ${data.eyeColor}</li>
               <li><span class="bold">Hair:</span> ${data.hair.color}, ${data.hair.type}</li>
-               <li><span class="bold">Blodtype:</span> ${data.bloodGroup}</li>
+               <li><span class="bold">Bloodtype:</span> ${data.bloodGroup}</li>
             </ul>
           </div>
           <div class="col">
